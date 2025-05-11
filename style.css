@@ -1,0 +1,54 @@
+    body {     
+        background-color: black;       
+    }
+        
+    .world {    
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 600px;
+        height: 600px;
+        transition: all .2s ease-in-out;
+        transform: scale(0.95)
+        }
+    
+    .world img {  
+        position: absolute;   
+    }
+    
+    .world:hover {
+        transform: scale(1);
+    }
+    
+    #outer {
+		-webkit-animation: leftrot 21s infinite linear;
+}
+    
+    #small {
+		-webkit-animation: rightrot 9s infinite linear;
+}
+    #inner {      
+        -webkit-animation: rightrot 50s infinite linear;
+    }
+    
+    
+        @-webkit-keyframes rightrot {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+    }
+    
+            @-webkit-keyframes leftrot {
+		from {
+				-webkit-transform: rotate(359deg);
+		}
+		to {
+				-webkit-transform: rotate(0deg);
+		}
+    }
